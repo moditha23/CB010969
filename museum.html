@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./homepage.css" type="text/css">
     <link rel="stylesheet" href="./plantations.css" type="text/css">
     <link rel="stylesheet" href="./museum.css" type="text/css">
+    <script src="museum.js"></script>
    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
     <!--manifest-->
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
@@ -119,6 +120,222 @@
             </div>
         </div>
     </section>
+    <div id="form1">
+        <div id="form">
+            
+            <h2 id="heading">BOOK TOUR TICKETS</h2>
+            <br>
+          
+            <form method="get">
+                <fieldset id="tickets">
+                    <legend>TICKETS</legend>
+                    <br>
+          
+                    <fieldset id="details">
+                        
+                        <p>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </p>
+
+                        <p>
+                            <label for="name">Surname:</label>
+                            <input type="text" id="name" name="name" required>
+                        </p>
+          
+                        <p>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </p>
+                    </fieldset>
+          
+                    <fieldset id="foreign">
+                        <legend>Foreign Tickets</legend>
+                        <p>
+                            <label for="foreignadults">Foreign Adults:</label>
+                            <input type="number" id="foreignad" name="foreignad" value="0" min="0">
+                        </p>
+          
+                        <p>
+                            <label for="foreignchild"> Foreign Children:</label>
+                            <input type="number" id="foreignch" name="foreignch" value="0" min="0">
+                        </p>
+                    </fieldset>
+          
+                    <fieldset id="local">
+                        <legend>Local Tickets</legend>
+                        <p>
+                            <label for="localadults">Local Adults:</label>
+                            <input type="number" id="localad" name="localad" value="0" min="0">
+                        </p>
+          
+                        <p>
+                            <label for="localchildu6"> Local Children(Below the age 6):</label>
+                            <input type="number" id="localchu6" name="localchu6" value="0" min="0">
+                        </p>
+                        <p>
+                            <label for="localchildu15">Local Children(Below the age 15):</label>
+                            <input type="number" id="localchu15" name="localchu15" value="0" min="0">
+                        </p>
+                    </fieldset>
+                    <br>
+          
+                    <p>
+                        <label for="duration">Duration:</label>
+                        <input type="radio" id="time1" name="timeslot" required value="Three Hours">Three Hours
+                        <input type="radio" id="time2" name="timeslot" required value="Half Day">Half Day
+                        <input type="radio" id="time3" name="timeslot" required value="Full Day">Full Day
+                        <input type="radio" id="time4" name="timeslot" required value="Two Days">Two Days
+                    </p>
+                </fieldset>
+          
+                <fieldset id="extras">
+                    <legend>Extras</legend>
+                    <p>
+                        <label for="annualpass">Annual Pass:</label>
+                        <input type="number" id="annualpass" name="annualpass" value="0" min="0">
+                    </p>
+          
+                    <p>
+                        <label for="foodtoken">Food Token:</label>
+                        <input type="number" id="foodtoken" name="foodtoken" value="0" min="0">
+                    </p>
+                </fieldset>
+                <br>
+          
+                <button type="submit" id="addtocart" name="addtocart">Add to cart</button>
+          
+                <button type="submit" id="placeorder" name="placeorder">Place Order</button>
+          
+            </form>
+        </div>
+        </div>
+        <div id="formm">
+            <div id="form2">
+            <section id="output">
+              <h2 id="b1">TEA PORIUM</h2>
+              <h3 id="b2">SRI LANKA</h3>
+              <h5 id="b3">Date:&nbsp;20/12/2022</h5>
+              <h5 id="b4">Bill No:&nbsp;00000011</h5>
+              <br>
+              <hr>
+              <br>
+              <p>Customer Name: <span id="x1"></span></p>
+              <br>
+              <hr>
+              <br>
+              <p>Number of Foreign Adults&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <span id="x2">00</span></p>
+              <br>
+              <p>Number of Foreign Children&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <span id="x3">00</span></p>
+              <br>
+              <p>Number of Local Adults&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <span id="x4">00</span></p>
+              <br>
+              <p>Number of Local Children(Under 6 years)&nbsp;&nbsp;&nbsp;: <span id="x5">00</span></p>
+              <br>
+              <p>Number of Local Children(Under 15 years)&nbsp;: <span id="x6">00</span></p>
+              <br>
+              <p>Annual Pases&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <Span id="x7">00</Span></p>
+              <br>
+              <p>Number of Food Tokens&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <span id="x8">00</span></p>
+              <br>
+              <hr>
+              <br>
+              <p>NET TOTAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:LKR  <span id="x9">00.00</span></p>
+              <br>
+              <p>Extras&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:LKR <Span id="x10">00.00</Span></p>
+              <br>
+              <hr>
+              <br>
+              <p>SUB TOTAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:LKR <Span id="x11">00.00</Span></p>
+          </section>
+        </div>
+        </div>
+    </section>
+          
+          <script src="./b.js"></script>
+
+
+          <div>
+            <h1 id="haha">YOUR KIND DONATIONS</h1>
+            <div class="row">
+                <div class="col-75">
+                  <div class="container1">
+                    <form>
+              
+                      <div class="row">
+                        <div class="col-50">
+                          <h3>Billing Address</h3>
+                          <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                          <input type="text" id="fname" name="firstname" placeholder="A.B.James">
+                          <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                          <input type="text" id="email" name="email" placeholder="abc@exe.com">
+                          <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                          <input type="text" id="adr" name="address" placeholder="123, Central Street">
+                          <label for="city"><i class="fa fa-institution"></i> City</label>
+                          <input type="text" id="city" name="city" placeholder="Colombo">
+              
+                          <div class="row">
+                            <div class="col-50">
+                              <label for="state">Province</label>
+                              <input type="text" id="state" name="state" placeholder="WP">
+                            </div>
+                            <div class="col-50">
+                              <label for="zip">Zip</label>
+                              <input type="text" id="zip" name="zip" placeholder="10001">
+                            </div>
+                          </div>
+                        </div>
+              
+                        <div class="col-50">
+                          <h3></h3>
+                          <label for="fname"></label>
+                          <div class="icon-container">
+                            
+                          </div>
+                          <label for="donations">Donation Amount</label>
+                          <select id="aaa">
+                            <option value="Afghanistan">Rs.100.00</option>
+                            <option value="Åland Islands">Rs.250.00</option>
+                            <option value="Albania">Rs.500.00</option>
+                            <option value="Algeria">Rs.1000.00</option>
+                            <option value="American Samoa">Rs.2500.00</option>
+                            <option value="American Samoa">Rs.5000.00</option>
+                            <option value="American Samoa">Rs.10000.00</option>
+                          </select>
+                          <label for="cname">Name on Card</label>
+                          <input type="text" id="cname" name="cardname" placeholder="John Doe">
+                          <label for="ccnum">Credit card number</label>
+                          <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                          <label for="expmonth">Exp Month</label>
+                          <input type="text" id="expmonth" name="expmonth" placeholder="September">
+              
+                          <div class="row">
+                            <div class="col-50">
+                              <label for="expyear">Exp Year</label>
+                              <input type="text" id="expyear" name="expyear" placeholder="2018">
+                            </div>
+                            <div class="col-50">
+                              <label for="cvv">CVV</label>
+                              <input type="text" id="cvv" name="cvv" placeholder="352">
+                            </div>
+                          </div>
+                        </div>
+              
+                      </div>
+
+                      
+<button onclick="myFunction()" id="btn111">DONATE</button>
+
+<script>
+function myFunction() {
+  alert("THANK YOU FOR YOUR DONATION!");
+}
+</script>
+                    </form>
+                  </div>
+                </div>            
+                  </div>
+                </div>
 <!--Testimonials-->
 <section class="testimonials">
     <h1><span>What Our</span> Customers Says</h1>
@@ -135,6 +352,8 @@
                
             </div>
         </div>
+
+        
         <div class="testimonial-col">
             <img src="./images/face2.jpg">
             <div>
@@ -153,7 +372,12 @@
 </section>
 <!--end testimonials-->
 
-    
+  </div>
+
+
+  <script src="./a.js"></script>
+  
+  
      <!--footer-->
      <section id="footer">
         <div class="footer container">
@@ -176,6 +400,13 @@
             <P>Copyright © Tea porium Sri Lanka.All rights reserved.</P>
         </div>
      </section>
+
+
+
+
+
+     
+
      <!--end footer-->
 
 <!--toggle menu-->
